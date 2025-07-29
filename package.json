@@ -1,0 +1,23 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "Сборка проекта на Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "cleandist": "rm -rf dist",
+    "update": "npm update --save-dev && npm update --save",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alina Korotkova",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "laravel-elixir-group-css-media-queries": "^1.0.0",
+    "sass": "^1.74.1"
+  }
+}
