@@ -1,0 +1,23 @@
+<div id="map" class="map"></div>
+<script>
+    initMap();
+
+    async function initMap() {
+        await ymaps3.ready;
+
+        const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+
+        const map = new YMap(
+            document.getElementById('map'),
+            {
+                location: {
+                    center: [47.886178, 56.631600],
+                    zoom: 12
+                }
+            }
+        );
+        
+
+        map.addChild(new YMapDefaultSchemeLayer());
+    }
+</script>
